@@ -1,0 +1,27 @@
+# hIPPYlib 2.3.0
+
+This image provides a full-featured and optimized build of hIPPYlib 2.3.0 and FEniCS 2017.2.
+
+This image contains the implementation of the model problems discussed in
+
+Umberto Villa, Noemi Petra, and Omar Ghattas. 2019.
+hIPPYlib: An Extensible Software Framework for Large-Scale Inverse Problems Governed by PDEs: Part I: Deterministic Inversion and Linearized Bayesian Inference.
+submitted ACM Trans. Math. Softw. (September 2019), 33 pages.
+
+Numerical results for the ``Coefficient field inversion in a Poisson PDE problem'' (Section 5.1) can be reproduced with the command
+
+    cd applications/poisson/
+    python model_subsurf.py
+
+Numerical results for the ``Inversion for the initial condition in an advection-diffusion PDE'' (Section 5.2) can be reproduced with the command
+
+   cd applications/ad_diff
+   python model_ad_diff.py
+
+Additional tutorials are located in the `tutorial` folder in the form of Jupyter notebooks.
+To start a Jupyter notebook server use the command
+
+     jupyter notebook --ip=0.0.0.0
+
+Detailed installation instruction and documentation can be found at
+https://hippylib.readthedocs.io/en/2.3.0/
